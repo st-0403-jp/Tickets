@@ -1,0 +1,14 @@
+{
+   "compilerOptions": {
+      "target": "./",
+      "module": "commonjs",
+      "declaration": false
+   },
+   "compileOnSave": true,
+   "filesGlob": [
+      "./*.ts"
+   ],
+   "files": [
+      "app.ts"
+   ]
+}

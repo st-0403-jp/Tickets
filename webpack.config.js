@@ -1,12 +1,15 @@
 module.exports = {
-  entry: './src/index.js',
+  entry:'./app.ts',
   output: {
-    path: __dirname + '/public',
-    filename: 'bundle.js'
+    filename: './bundle.js'
+  },
+  resolve: {
+      root:['./node_modules'],
+      extensions:['', '.webpack.js', 'web.js', '.js', '.ts']
   },
   module: {
     loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+        { test: /\.ts$/, loader: 'ts-loader' }
     ]
   },
   devServer: {
