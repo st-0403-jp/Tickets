@@ -1,0 +1,6 @@
+<div>
+  <input type="text" [(ngModel)]="addValue">
+  <button type="button" (click)="onAddTodo()">入力</button>
+</div>
+<p>{{addValue}}</p>
+<app-add-todo [addTodoValue]="addValue"></app-add-todo>
